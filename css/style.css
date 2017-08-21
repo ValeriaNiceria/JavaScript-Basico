@@ -1,0 +1,12 @@
+body{
+    font-family: Verdana,sans-serif;
+}
+
+h1{
+    color:#4F98AB;
+}
+h1+p{
+    width:500px;
+    font-size: 13px;
+    padding-left: 10px;
+}

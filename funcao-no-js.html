@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Função no JavaScript</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Função no JavaScript</h1>
+	<!--O construtor Function cria um novo objeto Function. Em JavaScript cada função é, na verdade, um objeto Function.-->
+	<strong>Function</strong>
+	<p>tests:</p>
+	<script>
+		//Test n°1:
+		function add(a,b){
+			return parseInt(a) + parseInt(b);
+		}
+		document.write("<p> add(10,55) = "+ add(10,55) + "</p>");
+
+
+		//Test n°2:
+		var factorial = function(n){
+			var fac = 1;
+			for (var y = n; y >= 1; y--){
+				fac *= y;
+			}
+			return fac;
+		};
+		document.write("<p> Fatorial (5) = " +(factorial(5))+ "</p>")
+	</script>
+</body>
+</html>

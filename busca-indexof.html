@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Busca com Indexof</title>
+    <link rel=stylesheet href="css/style.css">
+</head>
+<body>
+    <h1>Busca com Indexof</h1>
+    <p>O método indexOf() retorna o primeiro índice em que o elemento pode ser encontrado no array,
+    retorna -1 caso o mesmo não esteja presente.</p>
+    <strong>indexOf()</strong>
+    <script>
+    	var arr1 = ["orange","blue","black","white","pink","red","yellow","green","blue"];
+    	document.write(arr1);
+    	var ret = arr1.indexOf("orange");
+    	document.write("<p>Retorno: "+ret+" valor = "+arr1[ret]+"</p>");
+    </script>
+
+	<strong>indexOf(searchElement[, fromIndex])</strong>
+    <script>
+    	var arr1 = ["orange","blue","black","white","pink","red","yellow","green","blue"];
+    	var ret = arr1.indexOf("blue",2);
+    	document.write("<p>Retorno: "+ret+" valor = "+arr1[ret]+"</p>");
+    </script>
+
+    <strong>LastIndexOf()</strong> <!--O método lastIndexOf() retorna o ultimo índice que um certo elemento pode ser encontrado no array, ou -1 se o elemento não estiver presente. O array é pesquisado de traz para frente, começando pelo fromIndex.-->
+    <script>
+    	var arr1 = ["orange","blue","black","white","pink","red","yellow","green","blue"];
+    	var ret = arr1.lastIndexOf("blue");
+    	document.write("<p>Retorno: "+ret+" valor = "+arr1[ret]+"</p>");
+    </script>
+
+     <strong>LastIndexOf(searchElement[, fromIndex])</strong> 
+    <script>
+    	var arr1 = ["orange","blue","black","white","pink","red","yellow","green","blue"];
+    	var ret = arr1.lastIndexOf("blue",4);
+    	document.write("<p>Retorno: "+ret+" valor = "+arr1[ret]+"</p>");
+    </script>
+
+	<hr>
+
+    <strong>Search in practice</strong>
+    	<br/>
+    	<input type="text" id="search">
+    	<button onclick="search();">Search</button>
+    	<br/>
+    	<strong>Result:</strong>
+    	<br/>
+    	<span id="result"></span>
+
+    <script>
+    	function search(){
+    		var arr = ["a content of a blog","news of an article","recipe for a cake","programming tips"];
+    		var search = document.getElementById("search").value;
+    		var testKey = null;
+    		var result = "";
+    		for(var key in arr){//percorrendo o array de frases
+    			var auxArr = arr[key].split(" "); //Quebra o array em palavras
+    			for(var key2 in auxArr){ //percorro as palavras com que o usuário buscou
+    				if(auxArr.indexOf(search) > -1){ //Se for igual ele entra no if
+    					if(testKey != key){
+    						testKey = key;
+    						result += "<p>" + arr[key] + "</p>";
+    					}
+    				}
+    			}
+    		}
+    		document.getElementById("result").innerHTML = result;
+    	}
+    </script>
+
+</body>
+</html>

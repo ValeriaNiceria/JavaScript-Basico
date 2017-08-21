@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Métodos do Array - JavaScript</title>
+    <link rel=stylesheet href="css/style.css">
+</head>
+<body>
+    <h1>Métodos do Array - JavaScript</h1>
+    <strong>concat()</strong> <!--O método concat() retorna um novo array contendo todos os arrays ou valores passados como parâmetro-->
+    <script>
+        var arr1 = Array("Blue", "Yellow", "Orange", "Red", "Black");
+        var arr2 = Array(10, 20, 30, 50, 98.6);
+        arr1=arr1.concat(arr2);
+        document.write("<p><i>Usando o método concat(): </i>"+arr1+"</p>");
+    </script>
+
+    <strong>join()</strong> <!--O método join() junta todos os elementos de uma array dentro de uma string.-->
+    <script>
+        var arr1 = Array("Blue", "Yellow", "Orange", "Red", "Black");
+        var arr2 = Array(10, 20, 30, 50, 98.6);
+        var lista = arr1.join(" - ");
+        document.write("<p><i>Usando o método join(): </i>"+lista+"</p>");
+    </script>
+
+    <strong>push()</strong> <!--O método push() adiciona um ou mais elementos ao final de um array e retorna o novo comprimento desse array.-->
+    <script>
+        var arr = Array("Blue", "Yellow", "Orange", "Red", "Black");
+        arr.push("Azul","Amarelo","Laranja","Vermelho","Preto");
+        document.write("<p><i>Usando o método push(): </i>"+arr+"</p>");
+    </script>
+
+     <strong>pop()</strong> <!--O método pop() remove o último elemento de um array e retorna aquele elemento.-->
+    <script>
+        arr.pop();
+        document.write("<p><i>Usando o método pop(): </i>"+arr+"</p>");
+    </script>
+
+    <strong>shift()</strong> <!--O método shift()remove o primeiro elemento de um array e retorna esse elemento. Este método muda o tamanho do array. -->
+    <script>
+        arr.shift();
+        document.write("<p><i>Usando o método shift(): </i>"+arr+"</p>");
+    </script>
+</body>
+</html>

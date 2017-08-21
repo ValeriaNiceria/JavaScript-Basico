@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Métodos do Array - JavaScript (Parte 2)</title>
+    <link rel=stylesheet href="css/style.css">
+</head>
+<body>
+    <h1>Métodos do Array - JavaScript (Parte 2)</h1>
+
+    <strong>unshift()</strong> <!--O método unshift() adiciona um ou mais elementos no início de um array e retorna o número de elementos (propriedade length) atualizado.-->
+    <script>
+    var arr1 = Array("Azul","Red","Black");
+    arr1.unshift("Pink");
+    document.write("<p><i>Usando o método unshift():</i> "+arr1+"</p>");
+    </script>
+
+    <strong>slice()</strong> <!--O método slice() retorna uma cópia rasa de parte de um array em um novo objeto array.-->
+    <script>
+    var arr1 = Array("Azul","Red","Black","Pink","Blue");
+    var newArray = arr1.slice(1,4);
+    document.write("<p><i>Usando o método slice():</i> "+newArray+"</p>");
+    </script>
+
+    <strong>splice()</strong> <!--O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.-->
+    <script>
+    var arr1 = Array("Azul","Red","Black","Pink","Blue");
+    arr1.splice(1,2,"Vermelho","Preto","Azul");
+    document.write("<p><i>Usando o método splice():</i> "+arr1+"</p>");
+    </script>
+
+     <strong>reverse()</strong> <!--O método reverse() inverte os itens de um array. O primeiro elemento do array se torna o último e o último torna-se o primeiro.-->
+    <script>
+    var arr1 = Array("Azul","Red","Black","Pink","Blue");
+    arr1.reverse();
+    document.write("<p><i>Usando o método reverse():</i> "+arr1+"</p>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>If e Else - JavaScript</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>If e Else - JavaScript</h1>
+	<!--A condicional if  é uma estrutura condicional que executa a afirmação, dentro do bloco, se determinada condição for verdadeira. Se for falsa, executa as afirmações dentro de else.-->
+	<strong>Simple test:</strong>
+	<script>
+		if(3 > 2){
+			document.write("<p>True - ");
+			document.write("O valor 3 é maior que 2.</p>");
+		}else{
+			document.write("<p>False</p>");
+		}
+	</script>
+
+	<strong>Calculator:</strong>
+	<script>
+		function calculator(a,b,op){
+			if(op === "+"){
+				return "<p>"+(a + b)+"</p>";
+			}else if(op === "-"){
+				return "<p>"+(a - b)+"</p>";
+			}else if (op === "*") {
+				return "<p>"+(a * b)+"</p>";
+			}else{
+				return "<p>"+(a / b)+"</p>";
+			}
+		}	
+		document.write(calculator(100,15,"-"));	
+	</script>
+
+	<strong>Calculate the change:</strong>
+	<script>
+		function change(value,cash){
+			if (value > cash){
+				return "Error -> (value > cash)";
+			}else{
+				return "<p>Change = $ " + (cash - value)+"</p>";
+			}
+		}
+		document.write(change(10.55,20));
+	</script>
+
+	
+</body>
+</html>

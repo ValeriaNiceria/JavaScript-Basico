@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Método de Ordenação - Sort (JavaScript)</title>
+    <link rel=stylesheet href="css/style.css">
+</head>
+<body>
+    <h1>Método de Ordenação - Sort (JavaScript)</h1>
+    <p>O método sort() ordena os elementos do próprio array e retorna o array.
+    A ordenação não é necessariamente estável.
+    A ordenação padrão é de acordo com a  pontuação de código unicode.</p>
+
+    <strong>sort()</strong>
+    <script>
+        var arr= [2,66,4,8,1,9,5,69,32,100];
+        arr.sort() //Ordena de forma crescente
+        document.write("<p>Ordenando de forma crescente: "+arr+"</p>");
+    </script>
+
+    <strong>Ordenando de forma decrescente</strong>
+    <script>
+        function desc(a,b){
+            if(a > b){
+                return -1;
+            }
+            if(a < b){
+                return 1;
+            }
+            if(a === b){
+                return 0;
+            }
+        }
+        arr.sort(desc);
+        document.write("<p>Ordenando de forma decrescente: "+arr+"</p>");
+    </script>
+</body>
+</html>

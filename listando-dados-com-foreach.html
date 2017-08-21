@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Listando dados com ForEach</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>Listando dados com ForEach</h1>
+	<!--O método forEach() executa uma função fornecida uma vez para cada par de chave/valor no objeto Map, pela órdem de inserção.-->
+	<script>
+		var arr = ["a content of a blog","news of an article","recipe for a cake","programming tips"];
+		arr.forEach(function(value,key){
+			document.write("<p>Key: "+key+" Value: "+value+"</p>");
+		});
+	</script>
+</body>
+</html>
